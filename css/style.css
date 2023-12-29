@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booktitl {
+        width: 80% !important;
+    }
+
+    .teble {
+        width: 80% !important;
+    }
+}
+@media (max-width: 500px) {
+    .booktitl{
+        width: 95% !important;
+    }
+    .teble{
+        width: 95%!important;
+    }
+    .class{
+        padding: 3rem 2rem !important;
+    }
+}

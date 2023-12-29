@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kutubhona</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="alertt alert alert-warning alert-dismissible fade show  position-absolute w-100" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <center> <strong>Warning! </strong> Please input your information.</center>
+    </div>
+    <div id="body" class="content d-flex justify-content-evenly w-100">
+        <div class="booktitl w-25 d-flex flex-column">
+            <h3 class="text-center mt-4 fw-bold fs-1 font-monospace">Book adder</h3>
+            <div class="class d-flex flex-column bg-dark p-5">
+                <label class="text-white px-3 fw-bold">Book name</label>
+                <input type="text" id="name" class="px-3 bookName mb-4 form-control bg-transparent text-white rounded-pill"
+                    placeholder="Book name">
+                <label class="text-white px-3 fw-bold">Book author</label>
+                <input type="text" id="auth" class="px-3 bookName form-control bg-transparent text-white rounded-pill"
+                    placeholder="Book author">
+                <label class="text-white px-3 fw-bold mt-4">Book year</label>
+                <input type="number" min="100" max="2021" id="year"
+                    class="px-3 bookName mb-5 form-control bg-transparent text-white rounded-pill" placeholder="Book year">
+                <button class="sub btn btn-danger rounded-pill">Submit</button>
+            </div>
+        </div>
+        <table class="teble mt-5 w-50 table table-striped table-active text-center">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
